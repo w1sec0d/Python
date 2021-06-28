@@ -14,7 +14,12 @@ for elemento in miLista:
         miLista.pop(miLista.index(elemento))
 print(miLista)
 
-"""
 miLista = [1, 2]
 (uno, dos) = miLista
 print(uno)
+"""
+miLista = [1, 2, 3, 4, 10, 5, 6, 7, 5, 8, 9, 10, 10]
+
+miListaSinRepetidos = [
+    numero for numero in miLista if miLista.count(numero) == 1]
+print(miListaSinRepetidos)
